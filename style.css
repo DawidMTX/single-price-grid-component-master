@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --body-font:'Karla', sans-serif;
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow:hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: var(--light-gray);
+}
+
+main{
+    width: 80%;
+    min-width: 19rem;
+    max-width: 69rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+            "first-area"
+            "second-area"
+            "third-area";
+    margin: 70px auto ;
+}
+
+.container-1{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px 20px 20px;
+    border-radius: 5px 5px 0 0 ;
+
+}
+
+.container-2{
+    background-color: var(--cyan); 
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 10px 20px;
+
+}
+.container-3{
+    background-color: rgb(108, 187, 188); 
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 10px 20px;
+    border-radius: 0 0 5px 5px;
+
+}
+
+.container-1__header{
+    color: var(--cyan);
+    font-family: Karla, sens-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.container-1__text{
+    color:var(--bright-yellow);
+    font-family: Karla, sens-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+.container-1__akapit{
+    color: var(--grayish-blue);
+    font-size: 0.95rem;
+    line-height: 25px;
+}
