@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
 :root{
-    --body-font:'Karla', sans-serif;
+    --body-font:Karla, sans-serif;
     --cyan: hsl(179, 62%, 43%);
     --bright-yellow:hsl(71, 73%, 54%);
     --light-gray: hsl(204, 43%, 93%);
@@ -28,13 +28,14 @@ main{
             "second-area"
             "third-area";
     margin: 70px auto ;
+    font-family: var(--body-font);
 }
 
 .container-1{
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    padding: 15px 20px 20px 20px;
+    padding: 20px;
     border-radius: 5px 5px 0 0 ;
 
 }
@@ -43,34 +44,75 @@ main{
     background-color: var(--cyan); 
     display: flex;
     flex-direction: column;
-    padding: 0 20px 10px 20px;
+    padding: 20px;
+    color: white;
 
 }
 .container-3{
     background-color: rgb(108, 187, 188); 
     display: flex;
     flex-direction: column;
-    padding: 0 20px 10px 20px;
+    padding: 20px;
     border-radius: 0 0 5px 5px;
+    color: white;
 
 }
 
 .container-1__header{
     color: var(--cyan);
-    font-family: Karla, sens-serif;
     font-weight: 700;
     font-size: 1.2rem;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 .container-1__text{
     color:var(--bright-yellow);
-    font-family: Karla, sens-serif;
     font-weight: 400;
-    font-size: 1rem;
-    margin-bottom: 0px;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
 }
 .container-1__akapit{
     color: var(--grayish-blue);
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     line-height: 25px;
+  
+}
+.container-2__header{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    margin-top: 5px;
+   
+}
+.container-2__cost{
+    display: flex;
+    margin-bottom: 0px;
+}
+.container-2__price{
+    font-size: 2rem; 
+}
+.container-2__pricefor{
+   padding-left: 15px;
+   margin: auto 0;
+}
+.containert-2__description{
+    margin-top: 5px;
+}
+.contaner-2__button{
+    background-color: var(--bright-yellow);
+    padding: 15px 0;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+}
+.container-3__header{
+    font-size: 1.1rem;
+    margin-top: 6px;
+    margin-bottom: 7px;
+}
+.container-3__description{
+    font-size: 0.85rem;
+    line-height: 20px;
+    margin-bottom: 5px;
 }
