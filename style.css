@@ -126,3 +126,43 @@ main{
 }
 
 
+@media only screen and (min-width: 1025px){
+
+    main{
+        width: 44%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.8fr, 1.2fr;
+        grid-template-areas: 
+                "first-area first-area"
+                "second-area third-area";
+        margin: 165px auto;
+    }
+    .container-1{
+        padding: 40px;
+    }
+    .container-1__header{
+        font-size: 1.5rem;
+        margin-top:0;
+        margin-bottom: 5px;
+    }
+    .container-1__text{
+        font-size: 1.15rem;
+    }
+    .container-1__akapit{
+        font-size: 1rem;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    .container-2{
+        padding:35px 40px;
+        border-radius: 0 0 0 10px;
+    }
+    .containert-2__description{
+        font-size: 0.95rem;
+    }
+    .container-3{
+        padding:35px 40px;
+        border-radius: 0 0 10px 0;
+    }
+    
+}
